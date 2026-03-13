@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --blu600:
+    hsl(185, 75%, 39%);
+    --nvy950:
+    hsl(229, 23%, 23%);
+    --gry500:
+    hsl(227, 10%, 46%);
+    --gry100:
+    hsl(225, 10%, 92%);
+
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: var(--blu600);
+     background-image:
+  url(images/bg-pattern-top.svg),
+  url(images/bg-pattern-bottom.svg);
+
+  background-position:
+  left 130% top 180%,
+  bottom 180% right 125%;
+
+  background-repeat:
+  no-repeat,
+  no-repeat;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    padding: 1.5rem;
+    
+}
+
+.container{
+    background: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+
+}
+
+
+
+.img-card{
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-block: -3.25rem 1.25rem;
+    
+}
+
+
+
+.name{
+    
+    border-bottom: 1px solid var(--gry100);
+    padding-block-end: 1.75rem;
+}
+
+.name h1{
+    font-size: 1.125rem;
+    color: var(--nvy950);
+    margin-block-end: 0.5rem;
+}
+
+.name span{
+    color: var(--gry500);
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card-bottom h2{
+    font-size: 1.125rem;
+    margin-block-end: 0.25rem;
+    color: var(--nvy950);
+}
+
+.card-bottom span{
+    color: var(--gry500);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+@media (min-width:42rem){
+    body{
+        background-position:
+  left -50% top 200%,
+  bottom 220% right -50%;
+    }
+}
+/* - Font size (name and stats): 18px
+ */
+ 
